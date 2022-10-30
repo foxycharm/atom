@@ -1,5 +1,25 @@
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+apply plugin: 'checkstyle'
+
 dependencies {
-    testCompile rootProject.libraries.junit
+    // https://mvnrepository.com/artifact/junit/junit
+    testCompile group: 'junit', name: 'junit', version: '4.4'
+    testCompile group: 'org.hamcrest', name: 'hamcrest-core', version: '2.2'
+}
+
+checkstyle {
+    ignoreFailures = false
+    toolVersion = '7.5'
+    configFile = new File('/home/foxycharm/Documents/technosphere-java/atom/config/checkstyle/checkstyle.xml')
+}
+
+jar {
+    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    manifest { attributes 'Main-Class': 'ru.atom.makejar.HelloWorld' }
 }
 
 sourceSets {

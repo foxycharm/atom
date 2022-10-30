@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.atom.UtilTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-10-30T18:12:05" hostname="foxycharm-UX32LA" time="0.01">
+  <properties/>
+  <testcase name="max0" classname="ru.atom.UtilTest" time="0.006"/>
+  <testcase name="max1" classname="ru.atom.UtilTest" time="0.0"/>
+  <testcase name="max2" classname="ru.atom.UtilTest" time="0.0"/>
+  <testcase name="max3" classname="ru.atom.UtilTest" time="0.0"/>
+  <testcase name="sum0" classname="ru.atom.UtilTest" time="0.0"/>
+  <testcase name="sum1" classname="ru.atom.UtilTest" time="0.0"/>
+  <testcase name="sum2" classname="ru.atom.UtilTest" time="0.0"/>
+  <testcase name="sum3" classname="ru.atom.UtilTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
